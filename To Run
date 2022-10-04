@@ -1,0 +1,11 @@
+To use this neural network :
+1. You can use the ImageClassifier.ipynb (jupyter notebook). You can run it locally by modifying the layers to have flexibility and learning.
+2. There's a precompiled model. The name of structure of model is mod_struct.json and the weights of model are stored by the name fmnist_weights.h5
+  To load the model -->
+  ----use "model_from_json()", " load_weights()" under keras.models module, "Path()" from pathlib,
+  [[ f=Path("<The absolute path of the mod_structure.json on local machine>")
+     model_text=f.read_text()
+     model_structure=model_from_json(model_text) 
+     model.load_weights("<The absolute path of model_weights.h5 on local machine")
+  ]]
+  
